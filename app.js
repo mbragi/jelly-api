@@ -14,7 +14,7 @@ app.use(
     origin: "*",
   })
 );
-app.use(morgan("dev"));
+app.use(morgan("combined"));
 app.use(Routes);
 
 app.get("/", (req, res) => {

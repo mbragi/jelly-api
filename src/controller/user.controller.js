@@ -20,8 +20,7 @@ async function CreateUser(req, res) {
 
     if (allData) {
       res.status(200).json({
-        message: "successful",
-        user: `${allData.email} is already in use. Please Login or reset password`,
+        message: `${allData.email} belongs to an account. Please Login or Reset Password`,
       });
       return;
     }
