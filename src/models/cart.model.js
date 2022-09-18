@@ -4,10 +4,11 @@ const cart = new Schema(
   {
     user: {
       type: Types.ObjectId,
-      ref: "user",
+      ref: "users",
     },
     product: {
-      type: String,
+      type: Types.ObjectId,
+      ref: "products",
       required: true,
     },
     quatity: {

@@ -9,7 +9,9 @@ async function httpLoginUser(req, res, next) {
   if (!(email && password)) {
     res.status(400).json({
       message: "all fields required",
+      type: "error",
     });
+    return;
   }
   try {
     const userData = await User.findOne({ email });
@@ -28,6 +30,7 @@ async function httpLoginUser(req, res, next) {
         message: "successful",
         token: userData.token,
         data: userData,
+        type: "success",
       });
     }
   } catch (error) {
