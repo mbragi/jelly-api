@@ -79,23 +79,23 @@ async function createProduct(req, res) {
 
 async function getAllProductsByCategory(req, res) {
   let { _id } = req.body;
+  if (!_id) {
+    res.status(203).json({
+      message: "Select A Categories",
+    });
+    return;
+  }
   try {
-    if (!_id) {
-      res.status(203).json({
-        message: "Select A Categories",
-      });
-      return;
-    }
     const data = await Category.findById({ _id });
     // console.log(data._id);
     let category_id = _id;
     const productData = await Product.find({ category_id });
-    if ((data._id = productData[0].category_id)) {
-      res.status(200).json({
-        message: "successful",
-        data: productData,
-      });
-    }
+    res.status(200).json({
+      message: "successful",
+      data: productData,
+    });
+    return;
+
     // console.log(productData[0].category_id);
   } catch (error) {
     res.status(400).json({
@@ -105,14 +105,18 @@ async function getAllProductsByCategory(req, res) {
   }
 }
 
-async function getAllProducts(req, res) {
+async function getAllCategory(req, res) {
   const data = await Category.find({});
+  res.status(200).json({
+    message: "successful",
+    data: data,
+  });
   console.log(data);
 }
 
 module.exports = {
   createCategory,
   createProduct,
-  getAllProducts,
+  getAllCategory,
   getAllProductsByCategory,
 };
