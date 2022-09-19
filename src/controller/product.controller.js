@@ -107,9 +107,11 @@ async function getAllProductsByCategory(req, res) {
 
 async function getAllCategory(req, res) {
   const data = await Category.find({});
+  const data2 = await Product.find({});
   res.status(200).json({
     message: "successful",
-    data: data,
+    Cdata: data,
+    Pdata: data2,
   });
   console.log(data);
 }
