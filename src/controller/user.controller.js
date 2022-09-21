@@ -7,10 +7,12 @@ async function CreateUser(req, res) {
   if (!fullName || !email || !password || !confirmPassword) {
     return res.status(400).json({
       message: "All fields required",
+      type: "error",
     });
   } else if (password !== confirmPassword) {
     return res.status(403).json({
       message: "passwords need to match",
+      type: "error",
     });
   }
   try {
@@ -21,6 +23,7 @@ async function CreateUser(req, res) {
     if (allData) {
       res.status(200).json({
         message: `${allData.email} belongs to an account. Please Login or Reset Password`,
+        type: "error",
       });
       return;
     }
@@ -33,8 +36,9 @@ async function CreateUser(req, res) {
     });
     await newUser.save();
     res.status(201).json({
-      messsage: "succefully created",
+      message: "successfully created",
       data: newUser,
+      type: "success",
     });
   } catch (error) {
     res.status(400).json({
