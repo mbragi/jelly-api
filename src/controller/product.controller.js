@@ -6,18 +6,15 @@ const { Product } = require("../models/product.model");
 async function createCategory(req, res, next) {
   try {
     //create and save category
-    let { categoryName } = req.body;
-    if (!req.body) {
+    let { name } = req.body;
+    if (!name) {
       res.status(400).json({
         message: "category needed",
         type: "error",
       });
       return;
     } else {
-      const category = await Category.findOne(
-        { categoryName },
-        { categoryName }
-      );
+      const category = await Category.findOne({ name }, { name });
       if (category) {
         res.status(200).json({
           message: "successful",
@@ -26,10 +23,10 @@ async function createCategory(req, res, next) {
         return;
       }
       const newCategory = await new Category({
-        categoryName,
+        ...req.body,
       }).save();
     }
-    const allData = await Category.find({ categoryName });
+    const allData = await Category.find({ name });
     res.status(200).json({
       message: "successfully Created",
       data: allData,
