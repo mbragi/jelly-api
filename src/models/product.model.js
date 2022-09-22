@@ -8,14 +8,22 @@ const product = new Schema({
   },
   name: {
     type: String,
-    required: true,
     unique: true,
   },
   price: {
     type: String,
-    required: true,
     unique: false,
   },
+  price_range: [
+    {
+      one: {
+        type: String,
+      },
+      two: {
+        type: String,
+      },
+    },
+  ],
   rating: {
     type: String,
     // required: true,
@@ -24,8 +32,34 @@ const product = new Schema({
   },
   img: {
     type: String,
-    required: true,
     unique: false,
+  },
+  available_colors: [
+    {
+      color: {
+        type: String,
+        default: "",
+      },
+      color_img: {
+        type: String,
+        default: "",
+      },
+    },
+  ],
+  product_detail: [
+    {
+      key_features: {
+        type: String,
+      },
+      specifications: {
+        type: String,
+      },
+    },
+  ],
+  token: {
+    type: String,
+    default: "",
+    // unique: true
   },
 });
 module.exports = {
