@@ -101,45 +101,6 @@ async function getAllProductsByCategory(req, res) {
     console.log(error.message);
   }
 }
-async function verifyProduct(req, res) {
-  let { name } = req.body;
-  try {
-    if (!name) {
-      res.status(400).json({
-        message: "A product token need",
-      });
-      return;
-    } else {
-      const product = await Product.findOne({ name });
-      if (!product) {
-        res.status(400).json({
-          message: "Product Not found",
-        });
-        return;
-      } else {
-        //create token
-        const token = jwt.sign(
-          { _id: product._id, name },
-          process.env.JWT_SECRET,
-          {
-            expiresIn: "2h",
-          }
-        );
-        product.token = token;
-        await product.save();
-        const response = await Product.findOne({ ...product }).exec();
-        res.status(200).json({
-          message: "successful",
-          data: response.token,
-        });
-      }
-    }
-  } catch (error) {
-    res.status(400).json({
-      message: `catch:::${error.message}`,
-    });
-  }
-}
 
 async function getAllCategory(req, res) {
   const data = await Category.find({});
@@ -152,15 +113,16 @@ async function getAllCategory(req, res) {
   console.log(data);
 }
 async function getProduct(req, res) {
-  let { id } = req.body;
+  let { name } = req.body;
 
-  if (!id) {
+  if (!name) {
     res.status(400).json({
       message: "Invalid request",
     });
     return;
   }
-  const verifiedProduct = await Product.findById({ _id: id });
+  const verifiedProduct = await Product.findOne({ name });
+  console.log(verifiedProduct);
   if (!verifiedProduct) {
     res.status(404).json({
       message: "product not found",
@@ -177,7 +139,7 @@ async function getProduct(req, res) {
 module.exports = {
   createCategory,
   createProduct,
-  verifyProduct,
+  // verifyProduct,
   getProduct,
   getAllCategory,
   getAllProductsByCategory,

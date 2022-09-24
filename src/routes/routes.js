@@ -7,7 +7,7 @@ const {
   createCategory,
   getAllProductsByCategory,
   getProduct,
-  verifyProduct,
+  // verifyProduct,
 } = require("../controller/product.controller");
 const { CreateUser } = require("../controller/user.controller");
 
@@ -27,7 +27,7 @@ Routes.post("/create/product", createProduct);
 // @user Routes
 Routes.get("/category", getAllCategory);
 Routes.post("/products/category", getAllProductsByCategory);
-Routes.post("/product/detail", verifyProduct);
+// Routes.post("/product/detail", verifyProduct);
 Routes.post("/details", getProduct);
 
 module.exports = Routes;
