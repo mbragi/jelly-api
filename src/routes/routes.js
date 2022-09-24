@@ -23,8 +23,8 @@ Routes.post("/cart", saveCartData);
 
 // @ Admin ROUTES
 Routes.post("/", createCategory);
-Routes.post("/product", createProduct);
-
+Routes.post("/create/product", createProduct);
+// @user Routes
 Routes.get("/category", getAllCategory);
 Routes.post("/products/category", getAllProductsByCategory);
 Routes.post("/product/detail", verifyProduct);

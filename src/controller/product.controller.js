@@ -152,15 +152,15 @@ async function getAllCategory(req, res) {
   console.log(data);
 }
 async function getProduct(req, res) {
-  let { token } = req.body;
+  let { id } = req.body;
 
-  if (!token) {
+  if (!id) {
     res.status(400).json({
       message: "Invalid request",
     });
     return;
   }
-  const verifiedProduct = await Product.find({ token });
+  const verifiedProduct = await Product.findById({ _id: id });
   if (!verifiedProduct) {
     res.status(404).json({
       message: "product not found",
