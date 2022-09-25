@@ -83,13 +83,14 @@ async function getAllProductsByCategory(req, res) {
     return;
   }
   try {
-    const data = await Category.findById({ _id });
+    const categoryData = await Category.findById({ _id });
     // console.log(data._id);
     let category_id = _id;
     const productData = await Product.find({ category_id });
     res.status(200).json({
       message: "successful",
       data: productData,
+      data2: categoryData,
     });
     return;
 
@@ -110,28 +111,32 @@ async function getAllCategory(req, res) {
     Cdata: data,
     Pdata: data2,
   });
-  console.log(data);
+  // console.log(data);
 }
-async function getProduct(req, res) {
-  let { name } = req.body;
 
-  if (!name) {
+async function getProduct(req, res) {
+  let { id } = req.params;
+  if (!id) {
     res.status(400).json({
-      message: "Invalid request",
+      message: "invalid request",
     });
     return;
   }
-  const verifiedProduct = await Product.findOne({ name });
-  console.log(verifiedProduct);
-  if (!verifiedProduct) {
-    res.status(404).json({
-      message: "product not found",
-    });
-    return;
-  } else {
+  try {
+    const verifiedProduct = await Product.findOne({ _id: id });
+    if (verifiedProduct === null) {
+      res.status(404).json({
+        message: "Product not found",
+      });
+      return;
+    }
     res.status(200).json({
-      message: "successful",
+      message: " successful",
       data: verifiedProduct,
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: `catch:: ${error.message}`,
     });
   }
 }

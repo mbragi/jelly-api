@@ -28,6 +28,6 @@ Routes.post("/create/product", createProduct);
 Routes.get("/category", getAllCategory);
 Routes.post("/products/category", getAllProductsByCategory);
 // Routes.post("/product/detail", verifyProduct);
-Routes.post("/details", getProduct);
+Routes.get("/details/:id", getProduct);
 
 module.exports = Routes;
