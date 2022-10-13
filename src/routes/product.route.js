@@ -3,7 +3,7 @@ const {
   createProduct,
   getAllCategory,
   createCategory,
-  getAllProductsByCategory,
+  // getAllProductsByCategory,
   getProduct,
   // verifyProduct,
 } = require("../controller/product.controller");
@@ -16,7 +16,7 @@ Route.post("/", createCategory);
 Route.post("/create/product", createProduct);
 // @user Routes
 Route.get("/category", getAllCategory);
-Route.post("/products/category", getAllProductsByCategory);
+// Route.post("/products/category", getAllProductsByCategory);
 // Routes.post("/product/detail", verifyProduct);
 Route.get("/details/:id", getProduct);
 

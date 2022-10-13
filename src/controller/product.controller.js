@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { Category } = require("../models/catergory.model");
+const { Category } = require("../models/category.model");
 const { Product } = require("../models/product.model");
 const jwt = require("jsonwebtoken");
 
@@ -40,34 +40,35 @@ async function createCategory(req, res, next) {
 }
 
 async function createProduct(req, res) {
+  //create and save product
+  let { category_id, name, img, price } = req.body;
+  // console.log(category_id);
+  if (!category_id) {
+    res.status(400).json({
+      message: "Unable to, select a category",
+      type: "error",
+    });
+    return;
+  }
   try {
-    //create and save product
-    let { category_id, name, img, price } = req.body;
-    // console.log(category_id);
-    if (!category_id) {
+    const getName = await Category.findById({ _id: category_id });
+    if (!(name && img && price)) {
       res.status(400).json({
-        message: "category not sent",
+        message: "All products fields required!",
         type: "error",
       });
       return;
-    } else {
-      if (!(name && img && price)) {
-        res.status(400).json({
-          message: "All products fields required!",
-          type: "error",
-        });
-        return;
-      }
-      const product = await new Product({
-        ...req.body,
-      });
-      await product.save();
-      const allData2 = await Product.findOne({ ...req.body });
-      res.status(201).json({
-        message: "created successfully",
-        data: allData2,
-      });
     }
+    const product = await new Product({
+      ...req.body,
+      category_name: getName.name,
+    });
+    await product.save();
+    const allData2 = await Product.findOne({ ...req.body });
+    res.status(201).json({
+      message: "created successfully",
+      data: allData2,
+    });
   } catch (error) {
     res.status(400).json({
       message: `catch::: ${error.message}`,
@@ -75,34 +76,34 @@ async function createProduct(req, res) {
   }
 }
 
-async function getAllProductsByCategory(req, res) {
-  let { _id } = req.body;
-  if (!_id) {
-    res.status(203).json({
-      message: "Select A Categories",
-    });
-    return;
-  }
-  try {
-    const categoryData = await Category.findById({ _id });
-    // console.log(data._id);
-    let category_id = _id;
-    const productData = await Product.find({ category_id });
-    res.status(200).json({
-      message: "successful",
-      data: productData,
-      data2: categoryData,
-    });
-    return;
+// async function getAllProductsByCategory(req, res) {
+//   let { _id } = req.body;
+//   if (!_id) {
+//     res.status(203).json({
+//       message: "Select A Categories",
+//     });
+//     return;
+//   }
+//   try {
+//     const categoryData = await Category.findById({ _id });
+//     // console.log(data._id);
+//     let category_id = _id;
+//     const productData = await Product.find({ category_id });
+//     res.status(200).json({
+//       message: "successful",
+//       data: productData,
+//       data2: categoryData,
+//     });
+//     return;
 
-    // console.log(productData[0].category_id);
-  } catch (error) {
-    res.status(400).json({
-      message: `catch::${error.message}`,
-    });
-    console.log(error.message);
-  }
-}
+//     // console.log(productData[0].category_id);
+//   } catch (error) {
+//     res.status(400).json({
+//       message: `catch::${error.message}`,
+//     });
+//     console.log(error.message);
+//   }
+// }
 
 async function getAllCategory(req, res) {
   const data = await Category.find({});
@@ -148,5 +149,5 @@ module.exports = {
   // verifyProduct,
   getProduct,
   getAllCategory,
-  getAllProductsByCategory,
+  // getAllProductsByCategory,
 };
