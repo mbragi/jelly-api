@@ -60,7 +60,8 @@ async function createProduct(req, res) {
       }
       const product = await new Product({
         ...req.body,
-      }).save();
+      });
+      await product.save();
       const allData2 = await Product.findOne({ ...req.body });
       res.status(201).json({
         message: "created successfully",

@@ -54,11 +54,18 @@ const product = new Schema({
       specifications: {
         type: String,
       },
+      type: {
+        type: String,
+        ref: "categories",
+      },
+      model: {
+        type: String,
+      },
     },
   ],
-  token: {
+  available_quantity: {
     type: String,
-    default: "",
+    // default: "",
     // unique: true
   },
 });
