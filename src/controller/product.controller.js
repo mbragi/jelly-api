@@ -115,7 +115,9 @@ async function getAllCategory(req, res) {
   });
   // console.log(data);
 }
-
+async function httpCreateDetails(req,res) {
+  
+}
 async function getProduct(req, res) {
   let { id } = req.params;
   if (!id) {
@@ -150,4 +152,5 @@ module.exports = {
   getProduct,
   getAllCategory,
   // getAllProductsByCategory,
+  httpCreateDetails
 };

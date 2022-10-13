@@ -6,6 +6,7 @@ const {
   // getAllProductsByCategory,
   getProduct,
   // verifyProduct,
+  httpCreateDetails,
 } = require("../controller/product.controller");
 const Route = express.Router();
 
@@ -19,5 +20,6 @@ Route.get("/category", getAllCategory);
 // Route.post("/products/category", getAllProductsByCategory);
 // Routes.post("/product/detail", verifyProduct);
 Route.get("/details/:id", getProduct);
+Route.post("/create/details", httpCreateDetails);
 
 module.exports = Route;
