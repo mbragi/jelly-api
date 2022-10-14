@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
 const { Category } = require("../models/category.model");
 const { Product } = require("../models/product.model");
-const jwt = require("jsonwebtoken");
+const { Detail } = require("../models/details.model");
+
+// const jwt = require("jsonwebtoken");
 
 async function createCategory(req, res, next) {
   try {
@@ -123,7 +125,42 @@ async function httpGetCategories(req, res) {
   });
   // console.log(data);
 }
-async function httpCreateDetails(req, res) {}
+async function httpGetDetails() {
+  const details = await Detail.find({});
+  res.status(200).json({
+    message: " success!!!",
+  });
+}
+async function httpCreateDetails(req, res) {
+  let { product_id } = req.body;
+  if (!product_id) {
+    res.status(400).json({
+      message: "Bad request",
+    });
+    return;
+  }
+  try {
+    const find_type = await Product.findById({ _id: product_id });
+    if (find_type) {
+      type = find_type.name;
+      specifications = find_type._id;
+      const detail = await new Product({
+        ...req.body,
+        type,
+        specifications,
+      });
+      await detail.save();
+      await httpGetDetails(req, res);
+    }
+    res.status(404).json({
+      message: "unable to Create product",
+    });
+  } catch (error) {
+    res.status(400).json({
+      message: `catch::: ${error.message}`,
+    });
+  }
+}
 async function getProduct(req, res) {
   let { id } = req.params;
   if (!id) {

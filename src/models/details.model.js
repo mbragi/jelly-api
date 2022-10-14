@@ -7,8 +7,7 @@ const detail = new Schema(
       ref: "products",
     },
     type: {
-      type: mongoose.Types.ObjectId,
-      ref: "categories",
+      type: String,
     },
     key_features: {
       type: String,
@@ -23,4 +22,6 @@ const detail = new Schema(
   { timestamps: true }
 );
 
-module.exports = { Detail: model("detail", detail, "details") };
+module.exports = {
+  Detail: model("detail", detail, "details"),
+};
