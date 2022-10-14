@@ -61,7 +61,7 @@ async function createProduct(req, res) {
       });
       return;
     }
-    await Product.deleteMany();
+    // await Product.deleteMany();
     const product = await new Product({
       ...req.body,
       category_name: getName.name,
