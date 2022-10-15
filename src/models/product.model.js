@@ -51,20 +51,28 @@ const product = new Schema(
     available_quantity: {
       type: String,
     },
-    detail: {
-      type: {
-        type: String,
+    detail: [
+      {
+        type: {
+          type: String,
+        },
+        key_features: {
+          type: String,
+        },
+        specifications: {
+          type: String,
+        },
+        model: {
+          type: String,
+        },
+        function: {
+          String,
+        },
+        accessories: { String },
+        version: { String },
+        img_url: { String },
       },
-      key_features: {
-        type: String,
-      },
-      specifications: {
-        type: String,
-      },
-      model: {
-        type: String,
-      },
-    },
+    ],
   },
   { timestamps: true }
 );
