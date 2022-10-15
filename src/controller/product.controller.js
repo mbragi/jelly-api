@@ -79,34 +79,30 @@ async function createProduct(req, res) {
   }
 }
 
-// async function getAllProductsByCategory(req, res) {
-//   let { _id } = req.body;
-//   if (!_id) {
-//     res.status(203).json({
-//       message: "Select A Categories",
-//     });
-//     return;
-//   }
-//   try {
-//     const categoryData = await Category.findById({ _id });
-//     // console.log(data._id);
-//     let category_id = _id;
-//     const productData = await Product.find({ category_id });
-//     res.status(200).json({
-//       message: "successful",
-//       data: productData,
-//       data2: categoryData,
-//     });
-//     return;
+async function getAllProductsByCategory(req, res) {
+  let { _id } = req.params;
+  if (!_id) {
+    res.status(203).json({
+      message: "Select A Categories",
+    });
+    return;
+  }
+  try {
+    const productData = await Product.find({ id: category_id });
+    res.status(200).json({
+      message: "successful",
+      data: productData,
+    });
+    return;
 
-//     // console.log(productData[0].category_id);
-//   } catch (error) {
-//     res.status(400).json({
-//       message: `catch::${error.message}`,
-//     });
-//     console.log(error.message);
-//   }
-// }
+    // console.log(productData[0].category_id);
+  } catch (error) {
+    res.status(400).json({
+      message: `catch::${error.message}`,
+    });
+    console.log(error.message);
+  }
+}
 
 async function getAllCategory(req, res) {
   const data = await Category.find({});
@@ -203,7 +199,7 @@ module.exports = {
   // verifyProduct,
   getProduct,
   getAllCategory,
-  // getAllProductsByCategory,
+  getAllProductsByCategory,
   httpCreateDetails,
   httpGetCategories,
   httpGetDetails,
