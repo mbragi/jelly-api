@@ -3,11 +3,6 @@ const mongoose = require("mongoose");
 
 const detail = new Schema(
   {
-    product_id: {
-      type: mongoose.Types.ObjectId,
-      ref: "products",
-      unique: true,
-    },
     type: {
       type: String,
     },

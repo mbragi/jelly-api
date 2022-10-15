@@ -9,6 +9,7 @@ const {
   httpCreateDetails,
   httpGetCategories,
   httpGetDetails,
+  httpUpdateProduct,
 } = require("../controller/product.controller");
 const Route = express.Router();
 
@@ -17,6 +18,7 @@ const Route = express.Router();
 // @ Admin ROUTE
 Route.post("/", createCategory);
 Route.post("/create/product", createProduct);
+Route.post("/update/:id", httpUpdateProduct);
 // @user Routes
 Route.get("/category", getAllCategory);
 Route.get("/products/category/:id", getAllProductsByCategory);

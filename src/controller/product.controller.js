@@ -78,7 +78,37 @@ async function createProduct(req, res) {
     });
   }
 }
-
+async function httpUpdateProduct(req, res) {
+  let { id } = req.params;
+  if (!id) {
+    res.status(400).json({
+      message: "Bad request",
+    });
+    return;
+  }
+  try {
+    // console.log(req.body);
+    const find_type = await Product.findByIdAndUpdate(
+      { _id: id },
+      { ...req.body }
+    );
+    if (find_type) {
+      const data = await Product.findById({ _id: id });
+      res.status(200).json({
+        message: "success",
+        data: data,
+      });
+      return;
+    }
+    res.status(404).json({
+      message: "bad request",
+    });
+  } catch (error) {
+    res.status(400).json({
+      message: `catch ${error.message}`,
+    });
+  }
+}
 async function getAllProductsByCategory(req, res) {
   let { id } = req.params;
   if (!id) {
@@ -133,15 +163,18 @@ async function httpGetDetails(req, res) {
   });
 }
 async function httpCreateDetails(req, res) {
-  let { product_id } = req.body;
-  if (!product_id) {
+  let { id } = req.params;
+  if (!id) {
     res.status(400).json({
       message: "Bad request",
     });
     return;
   }
   try {
-    const find_type = await Product.findById({ _id: product_id });
+    const find_type = await Product.findByIdAndUpdate(
+      { _id: id },
+      { ...req.body }
+    );
     console.log(find_type.name);
     if (find_type) {
       const detail = await new Detail({
@@ -197,6 +230,7 @@ module.exports = {
   createCategory,
   createProduct,
   // verifyProduct,
+  httpUpdateProduct,
   getProduct,
   getAllCategory,
   getAllProductsByCategory,
