@@ -3,7 +3,7 @@ const {
   createProduct,
   getAllCategory,
   createCategory,
-  // getAllProductsByCategory,
+  getAllProductsByCategory,
   getProduct,
   // verifyProduct,
   httpCreateDetails,
