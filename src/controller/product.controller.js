@@ -142,16 +142,20 @@ async function httpCreateDetails(req, res) {
   }
   try {
     const find_type = await Product.findById({ _id: product_id });
+    console.log(find_type.name);
     if (find_type) {
-      type = find_type.name;
-      specifications = find_type._id;
-      const detail = await new Product({
+      const detail = await new Detail({
         ...req.body,
-        type,
-        specifications,
+        type: find_type.name,
+        specifications: find_type._id,
       });
       await detail.save();
-      await httpGetDetails(req, res);
+      const data = await Detail.find({});
+      res.status(200).json({
+        message: "success",
+        data: data,
+      });
+      return;
     }
     res.status(404).json({
       message: "unable to Create product",
@@ -198,4 +202,5 @@ module.exports = {
   // getAllProductsByCategory,
   httpCreateDetails,
   httpGetCategories,
+  httpGetDetails,
 };

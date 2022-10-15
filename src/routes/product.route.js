@@ -8,6 +8,7 @@ const {
   // verifyProduct,
   httpCreateDetails,
   httpGetCategories,
+  httpGetDetails,
 } = require("../controller/product.controller");
 const Route = express.Router();
 
@@ -19,7 +20,7 @@ Route.post("/create/product", createProduct);
 // @user Routes
 Route.get("/category", getAllCategory);
 // Route.post("/products/category", getAllProductsByCategory);
-// Routes.post("/product/detail", verifyProduct);
+Route.get("/product/detail", httpGetDetails);
 Route.get("/details/:id", getProduct);
 Route.post("/create/details", httpCreateDetails);
 Route.get("/cat", httpGetCategories);
