@@ -20,7 +20,7 @@ Route.post("/create/product", createProduct);
 // @user Routes
 Route.get("/category", getAllCategory);
 // Route.post("/products/category", getAllProductsByCategory);
-Route.get("/product/detail", httpGetDetails);
+Route.get("/product/detail/:id", httpGetDetails);
 Route.get("/details/:id", getProduct);
 Route.post("/create/details", httpCreateDetails);
 Route.get("/cat", httpGetCategories);

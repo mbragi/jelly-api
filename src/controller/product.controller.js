@@ -126,10 +126,14 @@ async function httpGetCategories(req, res) {
   });
   // console.log(data);
 }
-async function httpGetDetails() {
-  const details = await Detail.find({});
+async function httpGetDetails(req, res) {
+  let { id } = req.params;
+  const details = await Detail.find({ product_id: id }).catch((err) =>
+    console.log(err.message)
+  );
   res.status(200).json({
     message: " success!!!",
+    data: details,
   });
 }
 async function httpCreateDetails(req, res) {
