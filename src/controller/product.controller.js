@@ -80,15 +80,15 @@ async function createProduct(req, res) {
 }
 
 async function getAllProductsByCategory(req, res) {
-  let { _id } = req.params;
-  if (!_id) {
+  let { id } = req.params;
+  if (!id) {
     res.status(203).json({
       message: "Select A Categories",
     });
     return;
   }
   try {
-    const productData = await Product.find({ id: category_id });
+    const productData = await Product.find({ category_id: id });
     res.status(200).json({
       message: "successful",
       data: productData,
