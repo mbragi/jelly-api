@@ -208,7 +208,7 @@ async function getProduct(req, res) {
     return;
   }
   try {
-    const verifiedProduct = await Product.findOne({ _id: id });
+    const verifiedProduct = await Product.find({ _id: id });
     if (verifiedProduct === null) {
       res.status(404).json({
         message: "Product not found",
