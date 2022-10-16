@@ -236,5 +236,5 @@ module.exports = {
   getAllProductsByCategory,
   httpCreateDetails,
   httpGetCategories,
-  httpGetDetails,
+  // httpGetDetails,
 };
