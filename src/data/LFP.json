@@ -1,0 +1,61 @@
+[
+    {
+        "type" : "LiFeP04",
+        "model": "LFP11S36V20A",
+        "img_url" : "./webimage/D1.jpg",
+        "function" : "4NTC/+Balance/+Fan",
+        "Accessories" : "//",
+        "Specification" : "//",
+        "Version" : "10.1"
+    },
+    {
+        
+        "type" : "LiFeP04",
+        "model": "LFP15S48V100A",
+        "img_url" : "./webimage/D4.jpg",
+        "function" : "4NTC/+Balance/+Fan",
+        "Accessories" : "//",
+        "Specification" : "//",
+        "Version" : "10.1"
+    },
+    {
+        
+        "type" : "LiFeP04",
+        "model": "NCM16S48V80A",
+        "img_url" : "./webimage/D2.jpg",
+        "function" : "4NTC/+Balance/+Fan",
+        "Accessories" : "//",
+        "Specification" : "//",
+        "Version" : "10.1"
+    },
+    {
+        
+        "type" : "LiFeP04",
+        "model": "LFP19S60V30A",
+        "img_url" : "./webimage/D3.jpg",
+        "function" : "4NTC/+Balance/+Fan",
+        "Accessories" : "//",
+        "Specification" : "//",
+        "Version" : "10.1"
+    },
+    {
+        
+        "type" : "LiFeP04",
+        "model": "LFP19S60V60A",
+        "img_url" : "./webimage/D5.jpg",
+        "function" : "4NTC/+Balance/+Fan",
+        "Accessories" : "//",
+        "Specification" : "//",
+        "Version" : "10.1"
+    },
+    {
+        
+        "type" : "LiFeP04",
+        "model": "LFP24S72V100A",
+        "img_url" : "./webimage/D6.jpg",
+        "function" : "4NTC/+Balance/+Fan",
+        "Accessories" : "//",
+        "Specification" : "//",
+        "Version" : "10.1"
+    }
+]

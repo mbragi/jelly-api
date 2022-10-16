@@ -15,7 +15,7 @@ const product = new Schema(
       unique: true,
     },
     price: {
-      type: String,
+      type: Number,
       unique: false,
     },
     price_range: [

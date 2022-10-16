@@ -1,0 +1,56 @@
+[
+  {
+    "type": "NCM",
+    "model": "NCM13S48V80A",
+    "img_url": "./webimage/6.jpg",
+    "function": "4NTC/+Balance/+Fan",
+    "Accessories": "//",
+    "Specification": "//",
+    "Version": "10.1"
+  },
+  {
+    "type": "NCM",
+    "model": "NCM14S48V40A",
+    "img_url": "./webimage/5.jpg",
+    "function": "4NTC/+Balance/+Fan",
+    "Accessories": "//",
+    "Specification": "//",
+    "Version": "10.1"
+  },
+  {
+    "type": "NCM",
+    "model": "NCM15S48V40A",
+    "img_url": "./webimage/1.jpg",
+    "function": "4NTC/+Balance/+Fan",
+    "Accessories": "//",
+    "Specification": "//",
+    "Version": "10.1"
+  },
+  {
+    "type": "NCM",
+    "model": "NCM16S60V50A",
+    "img_url": "./webimage/2.jpg",
+    "function": "4NTC/+Balance/+Fan",
+    "Accessories": "//",
+    "Specification": "//",
+    "Version": "10.1"
+  },
+  {
+    "type": "NCM",
+    "model": "NCM16S60V60A",
+    "img_url": "./webimage/3.jpg",
+    "function": "4NTC/+Balance/+Fan",
+    "Accessories": "//",
+    "Specification": "//",
+    "Version": "10.1"
+  },
+  {
+    "type": "NCM",
+    "model": "NCM20S72V60A",
+    "img_url": "./webimage/4.jpg",
+    "function": "4NTC/+Balance/+Fan",
+    "Accessories": "//",
+    "Specification": "//",
+    "Version": "10.1"
+  }
+]

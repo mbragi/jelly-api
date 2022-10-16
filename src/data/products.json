@@ -1,0 +1,457 @@
+[
+  {
+    "name": "13S 48V 20A",
+    "img": "1.jpg",
+    "price": 800,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "13S 48V 20A",
+    "img": "3.jpg",
+    "price": 200,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "13S 48V 20A",
+    "img": "4.jpg",
+    "price": 800,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "13S 48V 20A",
+    "img": "5.jpg",
+    "price": 200,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "13S 48V 20A",
+    "img": "bike.jpg",
+    "price": 200,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "13S 48V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "13S 48V 20A",
+    "img": "2600mah 1.jpg",
+    "price": 800,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "14S 48V 20a",
+    "img": "LFP-BMS3.jpg",
+    "price": 200,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "14S 48V 20a",
+    "img": "bike.jpg",
+    "price": 200,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "14S 48V 20a",
+    "img": "2500mah.jpg",
+    "price": 800,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "14S 48V 20a",
+    "img": "LFP-BMS2.jpg",
+    "price": 200,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "14S 48V 20a",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "14S 48V 20a",
+    "img": "LFP-BMS1.jpg",
+    "price": 200,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "14S 48V 20a",
+    "img": "bike.jpg",
+    "price": 200,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "16S 60V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "16S 60V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "16S 60V 20A",
+    "img": "bike.jpg",
+    "price": 200,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "16S 60V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "16S 60V 20A",
+    "img": "6000mah.jpg",
+    "price": 800,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "16S 60V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "16S 60V 20A",
+    "img": "bike.jpg",
+    "price": 200,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "17S 60V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "17S 60V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "17S 60V 20A",
+    "img": "4800mah.jpg",
+    "price": 800,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "17S 60V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "17S 60V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "17S 60V 20A",
+    "img": "4800mah.jpg",
+    "price": 800,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "17S 60V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "20S 70V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "20S 70V 20A",
+    "img": "4800mah.jpg",
+    "price": 800,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "20S 70V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "20S 70V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "20S 70V 20A",
+    "img": "4800mah.jpg",
+    "price": 800,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "20S 70V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  },
+  {
+    "name": "20S 70V 20A",
+    "img": "turn-signal.jpg",
+    "price": 500,
+    "rating": 5,
+    "price_range": [
+      {
+        "one": "",
+        "two": ""
+      }
+    ],
+    "available_quantity": ""
+  }
+]
