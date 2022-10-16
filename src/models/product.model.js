@@ -12,22 +12,21 @@ const product = new Schema(
     },
     name: {
       type: String,
-      unique: true,
+      // unique: true,
     },
     price: {
       type: Number,
       unique: false,
     },
-    price_range: [
-      {
-        one: {
-          type: String,
-        },
-        two: {
-          type: String,
-        },
+    price_range: {
+      one: {
+        type: String,
       },
-    ],
+      two: {
+        type: String,
+      },
+    },
+
     rating: {
       type: Number,
       default: 0,
@@ -70,7 +69,7 @@ const product = new Schema(
         },
         accessories: { String },
         version: { String },
-        img_url: { String },
+        img_url: { String, unique: false },
       },
     ],
   },

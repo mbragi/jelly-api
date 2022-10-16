@@ -1,56 +1,240 @@
 [
   {
-    "type": "NCM",
-    "model": "NCM13S48V80A",
-    "img_url": "./webimage/6.jpg",
-    "function": "4NTC/+Balance/+Fan",
-    "Accessories": "//",
-    "Specification": "//",
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
     "Version": "10.1"
   },
   {
-    "type": "NCM",
-    "model": "NCM14S48V40A",
-    "img_url": "./webimage/5.jpg",
-    "function": "4NTC/+Balance/+Fan",
-    "Accessories": "//",
-    "Specification": "//",
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
     "Version": "10.1"
   },
   {
-    "type": "NCM",
-    "model": "NCM15S48V40A",
-    "img_url": "./webimage/1.jpg",
-    "function": "4NTC/+Balance/+Fan",
-    "Accessories": "//",
-    "Specification": "//",
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
     "Version": "10.1"
   },
   {
-    "type": "NCM",
-    "model": "NCM16S60V50A",
-    "img_url": "./webimage/2.jpg",
-    "function": "4NTC/+Balance/+Fan",
-    "Accessories": "//",
-    "Specification": "//",
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
     "Version": "10.1"
   },
   {
-    "type": "NCM",
-    "model": "NCM16S60V60A",
-    "img_url": "./webimage/3.jpg",
-    "function": "4NTC/+Balance/+Fan",
-    "Accessories": "//",
-    "Specification": "//",
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
     "Version": "10.1"
   },
   {
-    "type": "NCM",
-    "model": "NCM20S72V60A",
-    "img_url": "./webimage/4.jpg",
-    "function": "4NTC/+Balance/+Fan",
-    "Accessories": "//",
-    "Specification": "//",
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "10.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "10.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "0.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "10.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "10.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "12.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "9.5"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "0.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "10.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "10.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "12.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "9.5"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "10.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "0.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "10.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "10.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "12.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "9.5"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "10.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "11.3"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "11.3"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "11.3"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "10.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "11.3"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "11.3"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "10.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "10.1"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
+    "Version": "11.2"
+  },
+  {
+    "model": "NCM series",
+    "img_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+    "function": "Balance",
+    "Accessories": "Electronics",
     "Version": "10.1"
   }
 ]

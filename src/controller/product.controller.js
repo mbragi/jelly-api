@@ -79,17 +79,17 @@ async function createProduct(req, res) {
   }
 }
 async function httpUpdateProduct(req, res) {
-  let { id } = req.params;
-  if (!id) {
+  let { name } = req.body;
+  if (!name) {
     res.status(400).json({
       message: "Bad request",
     });
     return;
   }
   try {
-    // console.log(req.body);
-    const find_type = await Product.findByIdAndUpdate(
-      { _id: id },
+    console.log(req.body);
+    const find_type = await Product.findOneAndUpdate(
+      { name: name },
       { ...req.body }
     );
     if (find_type) {
@@ -177,7 +177,7 @@ async function httpCreateDetails(req, res) {
     );
     console.log(find_type.name);
     if (find_type) {
-      const detail = await new Detail({
+      const detail = await new Product({
         ...req.body,
         type: find_type.name,
         specifications: find_type._id,
