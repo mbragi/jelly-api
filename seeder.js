@@ -19,22 +19,17 @@ mongoConnect();
 
 const importData = async () => {
   try {
-    // await Product.deleteMany();
+    await Product.deleteMany();
     // await Category.deleteMany();
     // await Cart.deleteMany();
     // await Order.deleteMany();
     // const createdCategories = await Category.insertMany(category);
     // const getFirstCategory = createdCategories[0]._id;
-    // const get = Detail.find({});
-    // const append = await get.map((item) => {
-    //   return { ...item, };
-    // });
-    // await Detail.insertMany(append);
-    // console.log(get);
-    // const firstSampleProducts = products.map((product) => {
-    //   return { ...product, category_id: getFirstCategory };
-    // });
-    // await Product.insertMany(firstSampleProducts);
+
+    const firstSampleProducts = products.map((product) => {
+      return { ...product, category_id: "634c6f6903e11e1c9b55ed2f" ,category_name:"NCM"};
+    });
+    await Product.insertMany(firstSampleProducts);
 
     // const getSecondCategory = createdCategories[1]._id;
 

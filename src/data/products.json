@@ -1,5 +1,4 @@
-[
-  {
+[{
     "name": "13S 48V 20A",
     "img": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
     "price": 800,
@@ -10,7 +9,15 @@
         "two": "100"
       }
     ],
-    "available_quantity": "8"
+    "available_quantity": "8",
+    "detail": [{
+      "type": "13S 48V 20A",
+      "model": "NCM",
+      "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+      "function": "Balance",
+      "Accessories": "Electronics",
+      "Version": "10.1"
+    }]
   },
   {
     "name": "13S 48V 30A",
@@ -23,7 +30,17 @@
         "two": "100"
       }
     ],
-    "available_quantity": "8"
+    "available_quantity": "8",
+    "detail": [
+      {
+        "type": "13S 48V 30A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "10.1"
+      }
+    ]
   },
   {
     "name": "13S 48V 40A",
@@ -36,7 +53,17 @@
         "two": "100"
       }
     ],
-    "available_quantity": "8"
+    "available_quantity": "8",
+    "detail": [
+      {
+        "type": "13S 48V 40A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "10.1"
+      }
+    ]
   },
   {
     "name": "13S 48V 50A",
@@ -49,7 +76,17 @@
         "two": "100"
       }
     ],
-    "available_quantity": "8"
+    "available_quantity": "8",
+    "detail": [
+      {
+        "type": "13S 48V 50A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "10.1"
+      }
+    ]
   },
   {
     "name": "13S 48V 60A",
@@ -62,7 +99,17 @@
         "two": "100"
       }
     ],
-    "available_quantity": "8"
+    "available_quantity": "8",
+    "detail": [
+      {
+        "type": "13S 48V 60A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "10.1"
+      }
+    ]
   },
   {
     "name": "13S 48V 80A",
@@ -75,12 +122,22 @@
         "two": "100"
       }
     ],
-    "available_quantity": "8"
+    "available_quantity": "8",
+    "detail": [
+      {
+        "type": "13S 48V 80A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "10.1"
+      }
+    ]
   },
   {
     "name": "13S 48V 100A",
     "img": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
-    "price": 800,
+    "price": 500,
     "rating": 5,
     "price_range": [
       {
@@ -88,10 +145,21 @@
         "two": "100"
       }
     ],
-    "available_quantity": "8"
+    "available_quantity": "8",
+    "detail": [
+      {
+        "type": "13S 48V 100A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "10.1"
+      }
+    ]
   },
+
   {
-    "name": "14S 48V 20a",
+    "name": "14S 48V 20A",
     "img": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
     "price": 200,
     "rating": 5,
@@ -101,7 +169,17 @@
         "two": "300"
       }
     ],
-    "available_quantity": "8"
+    "available_quantity": "8",
+    "detail": [
+      {
+        "type": "14S 48V 20A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "10.1"
+      }
+    ]
   },
   {
     "name": "14S 48V 30A",
@@ -114,7 +192,17 @@
         "two": "300"
       }
     ],
-    "available_quantity": "8"
+    "available_quantity": "8",
+    "detail": [
+      {
+        "type": "14S 48V 30A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "8.1"
+      }
+    ]
   },
   {
     "name": "14S 48V 40A",
@@ -127,7 +215,17 @@
         "two": "300"
       }
     ],
-    "available_quantity": "8"
+    "available_quantity": "8",
+    "detail": [
+      {
+        "type": "14S 48V 40A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "8.1"
+      }
+    ]
   },
   {
     "name": "14S 48V 50A",
@@ -140,7 +238,17 @@
         "two": "300"
       }
     ],
-    "available_quantity": "8"
+    "available_quantity": "8",
+    "detail": [
+      {
+        "type": "14S 48V 50A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "8.1"
+      }
+    ]
   },
   {
     "name": "14S 48V 60A",
@@ -153,7 +261,17 @@
         "two": "300"
       }
     ],
-    "available_quantity": "5"
+    "available_quantity": "5",
+    "detail": [
+      {
+        "type": "14S 48V 60A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "8.1"
+      }
+    ]
   },
   {
     "name": "14S 48V 80A",
@@ -166,10 +284,20 @@
         "two": "300"
       }
     ],
-    "available_quantity": "5"
+    "available_quantity": "5",
+    "detail": [
+      {
+        "type": "14S 48V 80A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "8.1"
+      }
+    ]
   },
   {
-    "name": "14S 48V 100A",
+    "name": "14S 48V 80A",
     "img": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
     "price": 200,
     "rating": 5,
@@ -179,8 +307,19 @@
         "two": "300"
       }
     ],
-    "available_quantity": "5"
+    "available_quantity": "5",
+    "detail": [
+      {
+        "type": "14S 48V 80A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "8.1"
+      }
+    ]
   },
+
   {
     "name": "16S 60V 20A",
     "img": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
@@ -192,7 +331,17 @@
         "two": "500"
       }
     ],
-    "available_quantity": "5"
+    "available_quantity": "5",
+    "detail": [
+      {
+        "type": "16S 60V 20A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "8.1"
+      }
+    ]
   },
   {
     "name": "16S 60V 30A",
@@ -205,7 +354,17 @@
         "two": "500"
       }
     ],
-    "available_quantity": "5"
+    "available_quantity": "5",
+    "detail": [
+      {
+        "type": "16S 60V 30A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "8.1"
+      }
+    ]
   },
   {
     "name": "16S 60V 40A",
@@ -218,7 +377,17 @@
         "two": "500"
       }
     ],
-    "available_quantity": "5"
+    "available_quantity": "5",
+    "detail": [
+      {
+        "type": "16S 60V 40A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "8.1"
+      }
+    ]
   },
   {
     "name": "16S 60V 50A",
@@ -231,7 +400,17 @@
         "two": "500"
       }
     ],
-    "available_quantity": "5"
+    "available_quantity": "5",
+    "detail": [
+      {
+        "type": "16S 60V 50A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "8.1"
+      }
+    ]
   },
   {
     "name": "16S 60V 60A",
@@ -244,7 +423,17 @@
         "two": "500"
       }
     ],
-    "available_quantity": "5"
+    "available_quantity": "5",
+    "detail": [
+      {
+        "type": "16S 60V 60A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "11.0"
+      }
+    ]
   },
   {
     "name": "16S 60V 80A",
@@ -257,12 +446,22 @@
         "two": "500"
       }
     ],
-    "available_quantity": "5"
+    "available_quantity": "5",
+    "detail": [
+      {
+        "type": "16S 60V 80A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "11.0"
+      }
+    ]
   },
   {
-    "name": "16S 60V 100A",
+    "name": "16S 60V 80A",
     "img": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
-    "price": 200,
+    "price": 500,
     "rating": 5,
     "price_range": [
       {
@@ -270,8 +469,19 @@
         "two": "500"
       }
     ],
-    "available_quantity": "5"
+    "available_quantity": "5",
+    "detail": [
+      {
+        "type": "16S 60V 80A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "11.0"
+      }
+    ]
   },
+
   {
     "name": "17S 60V 20A",
     "img": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
@@ -283,7 +493,17 @@
         "two": ""
       }
     ],
-    "available_quantity": "5"
+    "available_quantity": "5",
+    "detail": [
+      {
+        "type": "17S 60V 20A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "11.0"
+      }
+    ]
   },
   {
     "name": "17S 60V 30A",
@@ -296,7 +516,17 @@
         "two": ""
       }
     ],
-    "available_quantity": "5"
+    "available_quantity": "5",
+    "detail": [
+      {
+        "type": "17S 60V 30A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "11.0"
+      }
+    ]
   },
   {
     "name": "17S 60V 40A",
@@ -309,7 +539,17 @@
         "two": ""
       }
     ],
-    "available_quantity": "10"
+    "available_quantity": "10",
+    "detail": [
+      {
+        "type": "17S 60V 40A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "11.0"
+      }
+    ]
   },
   {
     "name": "17S 60V 50A",
@@ -322,7 +562,17 @@
         "two": ""
       }
     ],
-    "available_quantity": "10"
+    "available_quantity": "10",
+    "detail": [
+      {
+        "type": "17S 60V 50A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "11.0"
+      }
+    ]
   },
   {
     "name": "17S 60V 60A",
@@ -335,7 +585,17 @@
         "two": ""
       }
     ],
-    "available_quantity": "10"
+    "available_quantity": "10",
+    "detail": [
+      {
+        "type": "17S 60V 60A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "11.0"
+      }
+    ]
   },
   {
     "name": "17S 60V 80A",
@@ -348,12 +608,22 @@
         "two": ""
       }
     ],
-    "available_quantity": "10"
+    "available_quantity": "10",
+    "detail": [
+      {
+        "type": "17S 60V 80A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "11.0"
+      }
+    ]
   },
   {
     "name": "17S 60V 100A",
     "img": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
-    "price": 500,
+    "price": 800,
     "rating": 5,
     "price_range": [
       {
@@ -361,10 +631,20 @@
         "two": ""
       }
     ],
-    "available_quantity": "10"
+    "available_quantity": "10",
+    "detail": [
+      {
+        "type": "17S 60V 100A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "11.0"
+      }
+    ]
   },
   {
-    "name": "20S 70V 200A",
+    "name": "20S 70V 20A",
     "img": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
     "price": 500,
     "rating": 5,
@@ -374,7 +654,17 @@
         "two": "5000"
       }
     ],
-    "available_quantity": "10"
+    "available_quantity": "10",
+    "detail": [
+      {
+        "type": "20S 70V 20A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "2.0"
+      }
+    ]
   },
   {
     "name": "20S 70V 30A",
@@ -387,7 +677,17 @@
         "two": "5000"
       }
     ],
-    "available_quantity": "10"
+    "available_quantity": "10",
+    "detail": [
+      {
+        "type": "20S 70V 30A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "2.0"
+      }
+    ]
   },
   {
     "name": "20S 70V 40A",
@@ -400,7 +700,17 @@
         "two": "5000"
       }
     ],
-    "available_quantity": "10"
+    "available_quantity": "10",
+    "detail": [
+      {
+        "type": "20S 70V 40A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "2.0"
+      }
+    ]
   },
   {
     "name": "20S 70V 50A",
@@ -413,7 +723,17 @@
         "two": "5000"
       }
     ],
-    "available_quantity": "10"
+    "available_quantity": "10",
+    "detail": [
+      {
+        "type": "20S 70V 50A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "2.0"
+      }
+    ]
   },
   {
     "name": "20S 70V 80A",
@@ -426,7 +746,17 @@
         "two": "5000"
       }
     ],
-    "available_quantity": "10"
+    "available_quantity": "10",
+    "detail": [
+      {
+        "type": "20S 70V 80A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "2.0"
+      }
+    ]
   },
   {
     "name": "20S 70V 100A",
@@ -439,6 +769,16 @@
         "two": "5000"
       }
     ],
-    "available_quantity": "10"
+    "available_quantity": "10",
+    "detail": [
+      {
+        "type": "20S 70V 100A",
+        "model": "NCM",
+        "photo_url": "https://res.cloudinary.com/mbrag/image/upload/v1665750508/tpaibppwsbx8q7qow6jj.jpg",
+        "function": "Balance",
+        "Accessories": "Electronics",
+        "Version": "2.0"
+      }
+    ]
   }
 ]
