@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { Category } = require("../models/category.model");
 const { Product } = require("../models/product.model");
-// const { Detail } = require("../models/details.model");
+const { Detail } = require("../models/detail.model");
 
 // const jwt = require("jsonwebtoken");
 
@@ -79,17 +79,17 @@ async function createProduct(req, res) {
   }
 }
 async function httpUpdateProduct(req, res) {
-  let { name } = req.body;
-  if (!name) {
+  let { id } = req.params;
+  if (!id) {
     res.status(400).json({
       message: "Bad request",
     });
     return;
   }
   try {
-    console.log(req.body);
-    const find_type = await Product.findOneAndUpdate(
-      { name: name },
+    // console.log(req.body);
+    const find_type = await Product.findByIdAndUpdate(
+      { _id: id },
       { ...req.body }
     );
     if (find_type) {
@@ -152,16 +152,29 @@ async function httpGetCategories(req, res) {
   });
   // console.log(data);
 }
-// async function httpGetDetails(req, res) {
-//   let { id } = req.params;
-//   const details = await Detail.find({ product_id: id }).catch((err) =>
-//     console.log(err.message)
-//   );
-//   res.status(200).json({
-//     message: " success!!!",
-//     data: details,
-//   });
-// }
+async function httpGetDetails(req, res) {
+  let { model } = req.body;
+
+  try {
+    const get = await Category.find({ name: model });
+    const details = await Detail.updateMany(
+      { model: model },
+      { product_id: get._id }
+    );
+    if (details) {
+      const data = await Detail.find({ model: model });
+      res.status(200).json({
+        message: " success!!!",
+        data: data,
+      });
+      return;
+    }
+  } catch (error) {
+    res.status(400).json({
+      message: `${error.message}`,
+    });
+  }
+}
 async function httpCreateDetails(req, res) {
   let { id } = req.params;
   if (!id) {
@@ -177,7 +190,7 @@ async function httpCreateDetails(req, res) {
     );
     console.log(find_type.name);
     if (find_type) {
-      const detail = await new Product({
+      const detail = await new Detail({
         ...req.body,
         type: find_type.name,
         specifications: find_type._id,
@@ -236,5 +249,5 @@ module.exports = {
   getAllProductsByCategory,
   httpCreateDetails,
   httpGetCategories,
-  // httpGetDetails,
+  httpGetDetails,
 };
