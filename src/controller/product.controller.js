@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { Category } = require("../models/category.model");
 const { Product } = require("../models/product.model");
-const { Detail } = require("../models/details.model");
+// const { Detail } = require("../models/details.model");
 
 // const jwt = require("jsonwebtoken");
 
@@ -152,16 +152,16 @@ async function httpGetCategories(req, res) {
   });
   // console.log(data);
 }
-async function httpGetDetails(req, res) {
-  let { id } = req.params;
-  const details = await Detail.find({ product_id: id }).catch((err) =>
-    console.log(err.message)
-  );
-  res.status(200).json({
-    message: " success!!!",
-    data: details,
-  });
-}
+// async function httpGetDetails(req, res) {
+//   let { id } = req.params;
+//   const details = await Detail.find({ product_id: id }).catch((err) =>
+//     console.log(err.message)
+//   );
+//   res.status(200).json({
+//     message: " success!!!",
+//     data: details,
+//   });
+// }
 async function httpCreateDetails(req, res) {
   let { id } = req.params;
   if (!id) {
