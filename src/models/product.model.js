@@ -69,7 +69,7 @@ const product = new Schema(
         },
         accessories: { type: String },
         version: { type: String },
-        photo_url: { type: String, unique: false },
+        photo_url: { String, unique: false },
       },
     ],
   },
