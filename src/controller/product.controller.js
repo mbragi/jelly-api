@@ -45,16 +45,16 @@ async function createProduct(req, res) {
   //create and save product
   let { category_id, name, img, price } = req.body;
   // console.log(category_id);
-  if (!category_id) {
-    res.status(400).json({
-      message: "Unable to, select a category",
-      type: "error",
-    });
-    return;
-  }
   try {
+    if (!category_id) {
+      res.status(400).json({
+        message: "Unable to, select a category",
+        type: "error",
+      });
+      return;
+    }
     const getName = await Category.findById({ _id: category_id });
-    if (!(name && img && price)) {
+    if (!(name && img && price && getName)) {
       res.status(400).json({
         message: "All products fields required!",
         type: "error",
@@ -152,29 +152,29 @@ async function httpGetCategories(req, res) {
   });
   // console.log(data);
 }
-async function httpGetDetails(req, res) {
-  let { model } = req.body;
+// async function httpGetDetails(req, res) {
+//   let { model } = req.body;
 
-  try {
-    const get = await Category.find({ name: model });
-    const details = await Detail.updateMany(
-      { model: model },
-      { product_id: get._id }
-    );
-    if (details) {
-      const data = await Detail.find({ model: model });
-      res.status(200).json({
-        message: " success!!!",
-        data: data,
-      });
-      return;
-    }
-  } catch (error) {
-    res.status(400).json({
-      message: `${error.message}`,
-    });
-  }
-}
+//   try {
+//     const get = await Category.find({ name: model });
+//     const details = await Detail.updateMany(
+//       { model: model },
+//       { product_id: get._id }
+//     );
+//     if (details) {
+//       const data = await Detail.find({ model: model });
+//       res.status(200).json({
+//         message: " success!!!",
+//         data: data,
+//       });
+//       return;
+//     }
+//   } catch (error) {
+//     res.status(400).json({
+//       message: `${error.message}`,
+//     });
+//   }
+// }
 async function httpCreateDetails(req, res) {
   let { id } = req.params;
   if (!id) {
