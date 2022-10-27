@@ -12,9 +12,11 @@ const app = express();
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // const whitelist = ["www.evtop.org", "http://localhost"];
-app.use(cors({
- origin:"*"
-}));
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 app.use(morgan("dev"));
 app.use("/api", AppRoute);
 app.use("/api", ProductRoute);

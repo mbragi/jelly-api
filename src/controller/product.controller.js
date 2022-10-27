@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { Category } = require("../models/category.model");
 const { Product } = require("../models/product.model");
-const { Detail } = require("../models/detail.model");
+// const { Detail } = require("../models/detail.model");
 
 // const jwt = require("jsonwebtoken");
 
@@ -175,43 +175,7 @@ async function httpGetCategories(req, res) {
 //     });
 //   }
 // }
-async function httpCreateDetails(req, res) {
-  let { id } = req.params;
-  if (!id) {
-    res.status(400).json({
-      message: "Bad request",
-    });
-    return;
-  }
-  try {
-    const find_type = await Product.findByIdAndUpdate(
-      { _id: id },
-      { ...req.body }
-    );
-    console.log(find_type.name);
-    if (find_type) {
-      const detail = await new Detail({
-        ...req.body,
-        type: find_type.name,
-        specifications: find_type._id,
-      });
-      await detail.save();
-      const data = await Detail.find({});
-      res.status(200).json({
-        message: "success",
-        data: data,
-      });
-      return;
-    }
-    res.status(404).json({
-      message: "unable to Create product",
-    });
-  } catch (error) {
-    res.status(400).json({
-      message: `catch::: ${error.message}`,
-    });
-  }
-}
+
 async function getProduct(req, res) {
   let { id } = req.params;
   if (!id) {
@@ -247,7 +211,5 @@ module.exports = {
   getProduct,
   getAllCategory,
   getAllProductsByCategory,
-  httpCreateDetails,
   httpGetCategories,
-  httpGetDetails,
 };
