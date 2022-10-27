@@ -26,7 +26,28 @@ const product = new Schema(
         type: String,
       },
     },
-
+    sub_image: [
+      {
+        option_one: {
+          type: String,
+        },
+        option_two: {
+          type: String,
+        },
+        option_three: {
+          type: String,
+        },
+        option_four: {
+          type: String,
+        },
+        option_five: {
+          type: String,
+        },
+        option_six: {
+          type: String,
+        },
+      },
+    ],
     rating: {
       type: Number,
       default: 0,
@@ -50,6 +71,14 @@ const product = new Schema(
     available_quantity: {
       type: String,
     },
+    inStock: {
+      type: Boolean,
+      default: true,
+    },
+    video_url: {
+      type: String,
+      default: true,
+    },
     detail: [
       {
         type: {
@@ -69,7 +98,6 @@ const product = new Schema(
         },
         accessories: { type: String },
         version: { type: String },
-        photo_url: { String, unique: false },
       },
     ],
   },
