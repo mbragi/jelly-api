@@ -50,6 +50,14 @@ const product = new Schema(
     available_quantity: {
       type: String,
     },
+    inStock:{
+      type: Boolean,
+      default:true
+    },
+    video_url:{
+      type: String,
+
+    },
     detail: [
       {
         type: {
@@ -69,7 +77,7 @@ const product = new Schema(
         },
         accessories: { type: String },
         version: { type: String },
-        photo_url: { String, unique: false },
+  
       },
     ],
   },
