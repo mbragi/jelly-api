@@ -14,21 +14,10 @@ async function httpLoginUser(req, res, next) {
     return;
   }
   try {
-    const userData = await User.findOne({ email });
+    const userData = await User.findOne({ email: email });
     if (userData && bcrypt.compareSync(password, userData.password)) {
-      //create token
-      const token = jwt.sign(
-        { userData_id: userData._id, email },
-        process.env.JWT_SECRET,
-        {
-          expiresIn: "2h",
-        }
-      );
-      userData.token = token;
-
       res.status(200).json({
         message: "successful",
-        token: userData.token,
         data: userData,
         type: "success",
       });
@@ -38,7 +27,6 @@ async function httpLoginUser(req, res, next) {
       message: `${error}`,
     });
   }
-  next();
 }
 async function httpGetUserExceptAdmin(req, res) {
   let filter = false;
