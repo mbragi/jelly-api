@@ -15,7 +15,7 @@ const product = new Schema(
       // unique: true,
     },
     price: {
-      type: Number,
+      type: String,
       unique: false,
     },
     price_range: {
@@ -26,28 +26,27 @@ const product = new Schema(
         type: String,
       },
     },
-    sub_image: [
-      {
-        option_one: {
-          type: String,
-        },
-        option_two: {
-          type: String,
-        },
-        option_three: {
-          type: String,
-        },
-        option_four: {
-          type: String,
-        },
-        option_five: {
-          type: String,
-        },
-        option_six: {
-          type: String,
-        },
+    sub_image: {
+      option_one: {
+        type: String,
       },
-    ],
+      option_two: {
+        type: String,
+      },
+      option_three: {
+        type: String,
+      },
+      option_four: {
+        type: String,
+      },
+      option_five: {
+        type: String,
+      },
+      option_six: {
+        type: String,
+      },
+    },
+
     rating: {
       type: Number,
       default: 0,
@@ -56,18 +55,17 @@ const product = new Schema(
       type: String,
       unique: false,
     },
-    available_colors: [
-      {
-        color: {
-          type: String,
-          default: "",
-        },
-        color_img: {
-          type: String,
-          default: "",
-        },
+    available_colors: {
+      color: {
+        type: String,
+        default: "",
       },
-    ],
+      color_img: {
+        type: String,
+        default: "",
+      },
+    },
+
     available_quantity: {
       type: String,
     },
@@ -86,27 +84,26 @@ const product = new Schema(
       type: String,
       default: true,
     },
-    detail: [
-      {
-        type: {
-          type: String,
-        },
-        key_features: {
-          type: String,
-        },
-        specifications: {
-          type: String,
-        },
-        model: {
-          type: String,
-        },
-        function: {
-          type: String,
-        },
-        accessories: { type: String },
-        version: { type: String },
+    detail: {
+      type: {
+        type: String,
       },
-    ],
+      key_features: {
+        type: String,
+      },
+      specifications: {
+        type: String,
+      },
+      model: {
+        type: String,
+      },
+      function: {
+        type: String,
+      },
+      accessories: { type: String },
+      version: { type: String },
+      photo_url: { String, unique: false },
+    },
   },
   { timestamps: true }
 );

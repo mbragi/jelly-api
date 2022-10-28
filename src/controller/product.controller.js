@@ -43,7 +43,7 @@ async function createCategory(req, res, next) {
 
 async function createProduct(req, res) {
   //create and save product
-  let { category_id, name, img, price } = req.body;
+  let { category_id, name, img } = req.body;
   // console.log(category_id);
   try {
     if (!category_id) {
@@ -54,7 +54,7 @@ async function createProduct(req, res) {
       return;
     }
     const getName = await Category.findById({ _id: category_id });
-    if (!(name && img && price && getName)) {
+    if (!(name && img && getName)) {
       res.status(400).json({
         message: "All products fields required!",
         type: "error",
