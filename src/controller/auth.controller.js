@@ -40,5 +40,24 @@ async function httpLoginUser(req, res, next) {
   }
   next();
 }
+async function httpGetUserExceptAdmin(req, res) {
+  let filter = false;
+  const data = await User.find({ isAdmin: filter }, {}).catch((err) =>
+    console.log(err.message)
+  );
+  console.log(data);
+  if (data) {
+    res.status(200).json({
+      message: "successful",
+      data: data,
+      success: true,
+    });
+    return;
+  }
+  res.status(400).json({
+    message: "failed to find users",
+    success: false,
+  });
+}
 
-module.exports = { httpLoginUser };
+module.exports = { httpLoginUser, httpGetUserExceptAdmin };

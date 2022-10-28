@@ -67,10 +67,10 @@ async function createProduct(req, res) {
       category_name: getName.name,
     });
     await product.save();
-    const allData2 = await Product.findOne({ ...req.body });
+    const data = await Product.findOne({ ...req.body });
     res.status(201).json({
       message: "created successfully",
-      data: allData2,
+      data: data,
     });
   } catch (error) {
     res.status(400).json({
