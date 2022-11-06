@@ -157,16 +157,38 @@ async function httpGetCategories(req, res) {
   const c3p = await Product.countDocuments({ category_name: c3n });
   const c4p = await Product.countDocuments({ category_name: c4n });
   const c5p = await Product.countDocuments({ category_name: c5n });
-  // const c6p = await Product.countDocuments({ category_name: c6n });
-  console.log(c1p, c2p);
+
+  const updateCat = await Category.updateOne(
+    { name: c1n },
+    { product_number: c1p },
+    { upsert: true }
+  );
+  const updateCa = await Category.updateOne(
+    { name: c2n },
+    { product_number: c2p },
+    { upsert: true }
+  );
+  const updateC = await Category.updateOne(
+    { name: c3n },
+    { product_number: c3p },
+    { upsert: true }
+  );
+  const update = await Category.updateOne(
+    { name: c4n },
+    { product_number: c4p },
+    { upsert: true }
+  );
+  const updat = await Category.updateOne(
+    { name: c5n },
+    { product_number: c5p },
+    { upsert: true }
+  );
+
+  const data2 = await Category.find({});
+
   res.status(200).json({
     message: "successful",
-    data: data,
-    c1p: c1p,
-    c2p: c2p,
-    c3p: c3p,
-    c4p: c4p,
-    c5p: c5p,
+    data: data2,
     // c6p: c6p,
   });
 }

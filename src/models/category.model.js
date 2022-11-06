@@ -10,6 +10,9 @@ const category = new Schema(
       type: String,
       required: true,
     },
+    product_number: {
+      type: String,
+    },
   },
   { timestamps: true }
 );
