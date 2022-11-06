@@ -1,16 +1,16 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const products = require("./src/data/products.json");
+// const products = require("./src/data/products.json");
 // const NCM = require("./src/data/Ncm.json");
 // const LFP = require("./src/data/LFP.json");
-
+const bcrypt = require("bcryptjs");
 const category = require("./src/data/category.json");
 const { Product } = require("./src/models/product.model");
 const { Category } = require("./src/models/category.model");
 const { Cart } = require("./src/models/cart.model");
 const { Order } = require("./src/models/order.model");
 const { mongoConnect } = require("./src/services/db");
-const { Detail } = require("./src/models/detail.model");
+const { User } = require("./src/models/user.model");
 // const { Detail } = require("./src/models/detail.model");
 
 dotenv.config();
@@ -19,17 +19,23 @@ mongoConnect();
 
 const importData = async () => {
   try {
-    await Product.deleteMany();
+    await User.insertMany({
+      fullName: "Jelly",
+      email: "254510608@qq.com",
+      password: bcrypt.hashSync("nbj10608jian", 10),
+      isAdmin: true,
+    });
+    // await Product.deleteMany();
     // await Category.deleteMany();
     // await Cart.deleteMany();
     // await Order.deleteMany();
     // const createdCategories = await Category.insertMany(category);
     // const getFirstCategory = createdCategories[0]._id;
 
-    const firstSampleProducts = products.map((product) => {
-      return { ...product, category_id: "634c6f6903e11e1c9b55ed2f" ,category_name:"NCM"};
-    });
-    await Product.insertMany(firstSampleProducts);
+    // const firstSampleProducts = products.map((product) => {
+    //   return { ...product, category_id: "634c6f6903e11e1c9b55ed2f" ,category_name:"NCM"};
+    // });
+    // await Product.insertMany(firstSampleProducts);
 
     // const getSecondCategory = createdCategories[1]._id;
 

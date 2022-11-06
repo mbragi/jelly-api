@@ -146,11 +146,29 @@ async function getAllCategory(req, res) {
 }
 async function httpGetCategories(req, res) {
   const data = await Category.find({});
+  const c1n = data[0].name;
+  const c2n = data[1].name;
+  const c3n = data[2].name;
+  const c4n = data[3].name;
+  const c5n = data[4].name;
+  // const c6n = data[5].name;
+  const c1p = await Product.countDocuments({ category_name: c1n });
+  const c2p = await Product.countDocuments({ category_name: c2n });
+  const c3p = await Product.countDocuments({ category_name: c3n });
+  const c4p = await Product.countDocuments({ category_name: c4n });
+  const c5p = await Product.countDocuments({ category_name: c5n });
+  // const c6p = await Product.countDocuments({ category_name: c6n });
+  console.log(c1p, c2p);
   res.status(200).json({
     message: "successful",
     data: data,
+    c1p: c1p,
+    c2p: c2p,
+    c3p: c3p,
+    c4p: c4p,
+    c5p: c5p,
+    // c6p: c6p,
   });
-  // console.log(data);
 }
 // async function httpGetDetails(req, res) {
 //   let { model } = req.body;
