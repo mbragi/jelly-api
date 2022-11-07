@@ -2,30 +2,41 @@ const { Schema, model, Types } = require("mongoose");
 
 const cart = new Schema(
   {
-    product: {
-      type: Types.ObjectId,
-      ref: "products",
-      required: true,
-    },
-    quantity: {
+    user_id: {
       type: String,
-      required: true,
-      default: "0",
+      ref: "users",
     },
-    price: {
-      type: String,
-      required: true,
-      default: "0.00",
-    },
-    total: {
-      type: String,
-      required: true,
-      default: "0.00",
-    },
+    products: [
+      {
+        product_id: {
+          type: Types.ObjectId,
+          ref: "products",
+          required: true,
+        },
+        product_name: {
+          type: String,
+        },
+        quantity: {
+          type: String,
+          required: true,
+          default: "0",
+        },
+        price: {
+          type: String,
+          required: true,
+          default: "0.00",
+        },
+        total: {
+          type: String,
+          required: true,
+          default: "0.00",
+        },
+      },
+    ],
     cartSummary: [
       {
         subTotal: {
-          type: Number,
+          type: String,
           default: "0.00",
         },
         grandTotal: {

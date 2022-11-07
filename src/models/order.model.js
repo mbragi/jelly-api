@@ -1,6 +1,8 @@
 const { Schema, model } = require("mongoose");
 const order = new Schema(
   {
+    user_id: {},
+    category_id: {},
     cart_id: {},
     is_paid: {},
     is_delivered: {},

@@ -13,6 +13,9 @@ const category = new Schema(
     product_number: {
       type: String,
     },
+    total_sales: {
+      type: String,
+    },
   },
   { timestamps: true }
 );

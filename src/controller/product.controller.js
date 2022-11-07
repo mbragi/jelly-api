@@ -61,17 +61,26 @@ async function createProduct(req, res) {
       });
       return;
     }
-    // await Product.deleteMany();
     const product = await new Product({
       ...req.body,
       category_name: getName.name,
     });
     await product.save();
-    const data = await Product.findOne({ ...req.body });
-    res.status(201).json({
-      message: "created successfully",
-      data: data,
+    const number = await Product.countDocuments({
+      category_name: getName.name,
     });
+    const update = await Category.updateOne(
+      { name: getName.name },
+      { product_number: number },
+      { upsert: true }
+    );
+    if (update) {
+      const data = await Product.findOne({ ...req.body });
+      res.status(201).json({
+        message: "created successfully",
+        data: data,
+      });
+    }
   } catch (error) {
     res.status(400).json({
       message: `catch::: ${error.message}`,
@@ -146,75 +155,12 @@ async function getAllCategory(req, res) {
 }
 async function httpGetCategories(req, res) {
   const data = await Category.find({});
-  const c1n = data[0].name;
-  const c2n = data[1].name;
-  const c3n = data[2].name;
-  const c4n = data[3].name;
-  const c5n = data[4].name;
-  // const c6n = data[5].name;
-  const c1p = await Product.countDocuments({ category_name: c1n });
-  const c2p = await Product.countDocuments({ category_name: c2n });
-  const c3p = await Product.countDocuments({ category_name: c3n });
-  const c4p = await Product.countDocuments({ category_name: c4n });
-  const c5p = await Product.countDocuments({ category_name: c5n });
-
-  const updateCat = await Category.updateOne(
-    { name: c1n },
-    { product_number: c1p },
-    { upsert: true }
-  );
-  const updateCa = await Category.updateOne(
-    { name: c2n },
-    { product_number: c2p },
-    { upsert: true }
-  );
-  const updateC = await Category.updateOne(
-    { name: c3n },
-    { product_number: c3p },
-    { upsert: true }
-  );
-  const update = await Category.updateOne(
-    { name: c4n },
-    { product_number: c4p },
-    { upsert: true }
-  );
-  const updat = await Category.updateOne(
-    { name: c5n },
-    { product_number: c5p },
-    { upsert: true }
-  );
-
-  const data2 = await Category.find({});
-
   res.status(200).json({
     message: "successful",
-    data: data2,
-    // c6p: c6p,
+    data: data,
   });
+  return;
 }
-// async function httpGetDetails(req, res) {
-//   let { model } = req.body;
-
-//   try {
-//     const get = await Category.find({ name: model });
-//     const details = await Detail.updateMany(
-//       { model: model },
-//       { product_id: get._id }
-//     );
-//     if (details) {
-//       const data = await Detail.find({ model: model });
-//       res.status(200).json({
-//         message: " success!!!",
-//         data: data,
-//       });
-//       return;
-//     }
-//   } catch (error) {
-//     res.status(400).json({
-//       message: `${error.message}`,
-//     });
-//   }
-// }
 
 async function getProduct(req, res) {
   let { id } = req.params;

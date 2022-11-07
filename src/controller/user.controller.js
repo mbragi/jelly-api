@@ -16,8 +16,6 @@ async function CreateUser(req, res) {
     });
   }
   try {
-    //search if user exist then update
-    // const user = await User.findOneAndUpdate({ email }, { ...req.body });
     const allData = await User.findOne({ email });
 
     if (allData) {
