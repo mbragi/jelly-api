@@ -7,6 +7,7 @@ const morgan = require("morgan");
 const AppRoute = require("./src/routes/app.route");
 const ProductRoute = require("./src/routes/product.route");
 const UserRoute = require("./src/routes/user.route");
+const CartRoute = require("./src/routes/cart.route");
 const app = express();
 
 app.use(express.json());
