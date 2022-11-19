@@ -19,7 +19,7 @@ async function httpCreateCart(req, res) {
     const data = await Cart.find({ user_id: user_id });
     if (data) {
       res.status(200).json({
-        message: "checkout successful... saved!!!",
+        message: "checkout successful... ",
         success: true,
       });
       return;

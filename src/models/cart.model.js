@@ -26,29 +26,25 @@ const cart = new Schema(
           required: true,
           default: "0.00",
         },
-        total: {
-          type: String,
-          required: true,
-          default: "0.00",
-        },
       },
     ],
-    cartSummary: [
-      {
-        subTotal: {
-          type: String,
-          default: "0.00",
-        },
-        grandTotal: {
-          type: String,
-          default: "0.00",
-        },
-        shippingPrice: {
-          type: String,
-          default: "0.00",
-        },
-      },
-    ],
+    total: {
+      type: String,
+      required: true,
+      default: "0.00",
+    },
+    subTotal: {
+      type: String,
+      default: "0.00",
+    },
+    grandTotal: {
+      type: String,
+      default: "0.00",
+    },
+    shippingPrice: {
+      type: String,
+      default: "0.00",
+    },
   },
   { timestamps: true }
 );

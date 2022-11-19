@@ -19,7 +19,7 @@ app.use(
   })
 );
 app.use(morgan("dev"));
-app.use("/api", AppRoute);
+app.use("/api/app", AppRoute);
 app.use("/api", ProductRoute);
 app.use("/api/auth", UserRoute);
 app.use("/api/cart", CartRoute);

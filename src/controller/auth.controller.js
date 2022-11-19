@@ -78,7 +78,7 @@ async function httpLoginUser(req, res) {
 // }
 async function httpGetUserExceptAdmin(req, res) {
   let filter = false;
-  const data = await User.find({ isAdmin: filter }, {}).catch((err) =>
+  const data = await User.find({ isAdmin: filter }).catch((err) =>
     console.log(err.message)
   );
   console.log(data);
