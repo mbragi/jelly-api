@@ -15,10 +15,7 @@ async function httpCreateAndUpdateBanner(req, res) {
       ...req.body,
     });
     await newBanner.save();
-    res.status(201).json({
-      message: "successfully created",
-      success: true,
-    });
+    httpGetBanner(req, res);
   } catch (error) {
     res.status(400).json({
       message: error.message,
