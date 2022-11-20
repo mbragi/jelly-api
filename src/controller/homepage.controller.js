@@ -11,17 +11,6 @@ async function httpCreateAndUpdateBanner(req, res) {
       });
       return;
     }
-    const data = await Banner.findOneAndUpdate(
-      { photoUrl: photoUrl },
-      { ...req.body },
-      { upsert: true }
-    );
-    if (data) {
-      res.status(200).json({
-        message: "successfully updated",
-      });
-      return;
-    }
     const newBanner = new Banner({
       ...req.body,
     });
