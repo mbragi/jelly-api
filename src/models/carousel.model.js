@@ -1,6 +1,10 @@
 const { Schema, model } = require("mongoose");
 const carousel = new Schema(
   {
+    img_main: {
+      type: String,
+      // required: true,
+    },
     img_one: {
       type: String,
       // required: true,
