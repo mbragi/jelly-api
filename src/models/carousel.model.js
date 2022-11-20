@@ -3,7 +3,7 @@ const carousel = new Schema(
   {
     img_main: {
       type: String,
-      // required: true,
+      ref: "banners",
     },
     img_one: {
       type: String,
