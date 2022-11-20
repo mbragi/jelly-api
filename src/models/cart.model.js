@@ -33,10 +33,10 @@ const cart = new Schema(
       required: true,
       default: "0.00",
     },
-    subTotal: {
-      type: String,
-      default: "0.00",
-    },
+    // subTotal: {
+    //   type: String,
+    //   default: "0.00",
+    // },
     grandTotal: {
       type: String,
       default: "0.00",

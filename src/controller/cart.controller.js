@@ -21,6 +21,7 @@ async function httpCreateCart(req, res) {
       res.status(200).json({
         message: "checkout successful... ",
         success: true,
+        data: data,
       });
       return;
     }
@@ -33,4 +34,29 @@ async function httpCreateCart(req, res) {
   }
 }
 
-module.exports = { httpCreateCart };
+async function httpGetUserCartByUserId(req, res) {
+  let { id } = req.params;
+  try {
+    if (!id) {
+      res.status(400).json({
+        message: "unable to process request",
+        success: false,
+      });
+      return;
+    }
+    const data = await Cart.find({ user_id: id });
+    res.status(200).json({
+      message: "success",
+      data: data,
+      success: true,
+    });
+  } catch (error) {
+    res.status(400).json({
+      message: error.message,
+      type: "server error!",
+      success: false,
+    });
+  }
+}
+
+module.exports = { httpCreateCart, httpGetUserCartByUserId };
