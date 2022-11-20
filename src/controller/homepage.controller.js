@@ -25,12 +25,32 @@ async function httpCreateAndUpdateBanner(req, res) {
   }
 }
 async function httpCreateHomepage(req, res) {
-  try {
-    const newHomepage = new Carousel({
-      ...req.body,
+  let { img_main, img_one, img_two, img_three, img_four } = req.body;
+  if (!img_main) {
+    res.status(400).json({
+      message: "unable to process request",
+      success: false,
     });
-    await newHomepage.save();
-    httpGetHomepage(req, res);
+    return;
+  }
+  try {
+    const data = await Carousel.updateOne(
+      { img_main: img_main },
+      { ...req.body },
+      { upsert: true }
+    );
+    if (!data) {
+      const newHomepage = new Carousel({
+        ...req.body,
+      });
+      await newHomepage.save();
+      httpGetHomepage(req, res);
+    }
+    res.status(200).json({
+      message: "success",
+      success: true,
+      data: data,
+    });
   } catch (error) {
     res.status(400).json({
       message: error.message,
