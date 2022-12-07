@@ -1,12 +1,12 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
-
+mongoose.set("strictQuery", false);
 mongoose.connection.on("open", () => {
   console.log(`database connected @ ${mongoose.connection.host}`);
 });
 
 mongoose.connection.on("error", (err) => {
-  console.log(`database conntiom failed with ${err}`);
+  console.log(`database connection failed with ${err}`);
   process.exit(1);
 });
 
